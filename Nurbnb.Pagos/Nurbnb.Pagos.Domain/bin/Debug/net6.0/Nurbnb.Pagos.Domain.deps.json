@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Nurbnb.Pagos.Domain/1.0.0": {
+        "dependencies": {
+          "Restaurant.SharedKernel": "1.0.0"
+        },
+        "runtime": {
+          "Nurbnb.Pagos.Domain.dll": {}
+        }
+      },
+      "Restaurant.SharedKernel/1.0.0": {
+        "runtime": {
+          "Restaurant.SharedKernel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Nurbnb.Pagos.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Restaurant.SharedKernel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
