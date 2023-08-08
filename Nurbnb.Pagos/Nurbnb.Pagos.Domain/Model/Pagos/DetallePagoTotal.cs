@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Nurbnb.Pagos.Domain.Model.Pagos
 {
-    public record DetallePagoTotal:ValueObject
+    public record DetallePagoTotal : ValueObject
     {
         public decimal Importe { get; init; }
         public int Porcentaje { get; init; }
@@ -23,7 +23,15 @@ namespace Nurbnb.Pagos.Domain.Model.Pagos
             Importe = importe;
             Porcentaje = porcentaje;
         }
-        public decimal CalculoTotal() => Importe * (Porcentaje / 100);
+        public decimal CalculoTotal()
+        { 
+            decimal total = Importe;
+            if (Porcentaje >0)
+                total = (Decimal) Importe * (Porcentaje / (Decimal)100);
+
+            return total;
+
+        }
 
        
     }

@@ -8,9 +8,11 @@ namespace Nurbnb.Pagos.Domain.Model.MedioPagos
 {
     public class MedioPagoZelle : IMedioPago
     {
-        public bool ProcesarPago(string cuentaOrigen, string cuentaDestino, string bcoOrigen, string bcoDestino, decimal importe)
+        public string ProcesarPago()
         {
-            throw new NotImplementedException();
+            Random random = new Random();
+
+            return TipoMedio.Zelle.ToString() + random.Next(10000).ToString();
         }
     }
 }

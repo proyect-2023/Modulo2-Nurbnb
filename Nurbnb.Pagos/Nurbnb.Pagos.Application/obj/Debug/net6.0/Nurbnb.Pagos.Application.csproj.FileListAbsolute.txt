@@ -1,0 +1,17 @@
+D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.Application\bin\Debug\net6.0\Nurbnb.Pagos.Application.deps.json
+D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.Application\bin\Debug\net6.0\Nurbnb.Pagos.Application.dll
+D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.Application\bin\Debug\net6.0\Nurbnb.Pagos.Application.pdb
+D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.Application\bin\Debug\net6.0\Nurbnb.Pagos.Domain.dll
+D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.Application\bin\Debug\net6.0\Restaurant.SharedKernel.dll
+D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.Application\bin\Debug\net6.0\Nurbnb.Pagos.Domain.pdb
+D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.Application\bin\Debug\net6.0\Restaurant.SharedKernel.pdb
+D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.Application\obj\Debug\net6.0\Nurbnb.Pagos.Application.csproj.AssemblyReference.cache
+D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.Application\obj\Debug\net6.0\Nurbnb.Pagos.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.Application\obj\Debug\net6.0\Nurbnb.Pagos.Application.AssemblyInfoInputs.cache
+D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.Application\obj\Debug\net6.0\Nurbnb.Pagos.Application.AssemblyInfo.cs
+D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.Application\obj\Debug\net6.0\Nurbnb.Pagos.Application.csproj.CoreCompileInputs.cache
+D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.Application\obj\Debug\net6.0\Nurbnb.Pagos.Application.csproj.CopyComplete
+D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.Application\obj\Debug\net6.0\Nurbnb.Pagos.Application.dll
+D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.Application\obj\Debug\net6.0\refint\Nurbnb.Pagos.Application.dll
+D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.Application\obj\Debug\net6.0\Nurbnb.Pagos.Application.pdb
+D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.Application\obj\Debug\net6.0\ref\Nurbnb.Pagos.Application.dll

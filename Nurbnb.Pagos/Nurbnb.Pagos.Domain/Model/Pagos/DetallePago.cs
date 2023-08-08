@@ -18,11 +18,13 @@ namespace Nurbnb.Pagos.Domain.Model.Pagos
 
         internal DetallePago(Guid catalogoid, int porcentaje,decimal importe)
         {
+            Id = Guid.NewGuid();
             CatalogoId = catalogoid;
             Importe= importe;
             Porcentaje = porcentaje;
             Total= new DetallePagoTotal(importe,porcentaje).CalculoTotal();
 
         }
+        private DetallePago() { }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Nurbnb.Pagos.Domain.Events;
+using Nurbnb.Pagos.Domain.Model.CatalogoDevolucion;
 using Nurbnb.Pagos.Domain.Model.Pagos;
 using Restaurant.SharedKernel.Core;
 using System;
@@ -11,34 +12,33 @@ namespace Nurbnb.Pagos.Domain.Model.Devoluciones
 {
     public class Devolucion : AggregateRoot
     {
-        public DateTime Fecha { get; private set; }
+        public DateTime FechaRegistro { get; private set; }
         public Guid PagoId { get; private set; }
-        public Guid CatalogoID { get; private set; }
-        public DevolucionMotivo Motivo { get; private set; }
-        public int Porcentaje { get; private set; }
-        public decimal Importe { get; private set; }
+        public Guid CatalogoDevolucionId { get; private set; }
+        public int PorcentajeDevolucion { get; private set; }
+        public decimal ImportePago { get; private set; }
         public decimal TotalDevolucion { get; private set; }
 
-        internal Devolucion( Guid pagoId, Guid catalogoID, string motivo, int porcentaje,decimal importe)
+        internal Devolucion( Guid pagoId, Guid catalogoDevolucionId, int porcentajeDevolucion, decimal importePago)
         {
-            Fecha = DateTime.Now;
+            FechaRegistro = DateTime.Now;
             PagoId = pagoId;
-            CatalogoID = catalogoID;
-            Motivo = new DevolucionMotivo(motivo);
-            Porcentaje = porcentaje;
-            Importe = importe;
-            TotalDevolucion = new DevolucionImporte(importe,porcentaje).CalculoDevolucion();
+            CatalogoDevolucionId = catalogoDevolucionId;
+            PorcentajeDevolucion= porcentajeDevolucion;
+            ImportePago = importePago;
+            TotalDevolucion = new DevolucionImporte(importePago, porcentajeDevolucion).CalculoDevolucion();
         }
         public void Confirmar()
         {
             if (TotalDevolucion == 0) return;
 
             DevolucionConfirmada.DetalleDevolucionConfirmada detalleDevolucion =
-                new DevolucionConfirmada.DetalleDevolucionConfirmada(PagoId, CatalogoID, TotalDevolucion);
+                new DevolucionConfirmada.DetalleDevolucionConfirmada(PagoId, CatalogoDevolucionId, TotalDevolucion);
 
 
             DevolucionConfirmada evento = new DevolucionConfirmada(Id, detalleDevolucion);
             AddDomainEvent(evento);
         }
+        private Devolucion() { }
     }
 }

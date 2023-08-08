@@ -23,6 +23,6 @@ namespace Nurbnb.Pagos.Domain.Model.Devoluciones
             Importe = importe;
             Porcentaje = porcentaje;
         }
-        public decimal CalculoDevolucion() => Importe * (Porcentaje / 100);
+        public decimal CalculoDevolucion() => Importe * (Porcentaje /(Decimal)100);
     }
 }

@@ -1,4 +1,5 @@
-﻿using Restaurant.SharedKernel.Core;
+﻿using MediatR;
+using Restaurant.SharedKernel.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,17 +8,17 @@ using System.Threading.Tasks;
 
 namespace Nurbnb.Pagos.Domain.Events
 {
-    public record PagoConfirmado : DomainEvent
+    public record PagoConfirmado : DomainEvent,INotification
     {
         public Guid PagoId { get; init; }
-        public ICollection<DetallePagoConfirmado> Detalle { get; init; }
+        public DetallePagoConfirmado Detalle { get; init; }
         public PagoConfirmado(Guid pagoId,
-            ICollection<DetallePagoConfirmado> detalle) : base(DateTime.Now)
+            DetallePagoConfirmado detalle) : base(DateTime.Now)
         {
             PagoId = pagoId;
             Detalle = detalle;
         }
 
-        public record DetallePagoConfirmado(Guid catalogoId, int porcentaje, decimal totalImporte);
+        public record DetallePagoConfirmado(string cuentaOrigen, string bcoOrigen, decimal totalImporte);
     }
 }
