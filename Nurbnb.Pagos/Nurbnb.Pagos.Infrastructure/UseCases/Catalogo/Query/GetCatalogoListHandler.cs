@@ -38,7 +38,8 @@ namespace Nurbnb.Pagos.Infrastructure.UseCases.Catalogo.Query
                 {
                     CatalogoId = item.Id,
                     Descripcion = item.Descripcion,
-                    Porcentaje = item.Porcentaje
+                    Porcentaje = item.Porcentaje,
+                    Tipo= (item.EsReserva== (int)TipoCatalogo.Reserva? TipoCatalogo.Reserva.ToString():TipoCatalogo.Cobro.ToString())
                 }).ToListAsync(cancellationToken);
         }
     }

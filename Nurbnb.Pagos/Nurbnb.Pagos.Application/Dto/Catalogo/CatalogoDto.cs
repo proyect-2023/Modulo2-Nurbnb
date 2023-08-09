@@ -12,6 +12,6 @@ namespace Nurbnb.Pagos.Application.Dto.Catalogo
         public Guid CatalogoId { get; set; }
         public string Descripcion { get;  set; }
         public int Porcentaje { get;  set; }
-        public int EsReserva { get;  set; }
+        public string Tipo { get;  set; }
     }
 }
