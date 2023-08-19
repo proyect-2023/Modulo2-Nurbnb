@@ -1,4 +1,5 @@
-﻿using Restaurant.SharedKernel.Core;
+﻿using Nurbnb.Pagos.Domain.Exceptions;
+using Restaurant.SharedKernel.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +30,14 @@ namespace Nurbnb.Pagos.Domain.Model.MedioPagos
         protected virtual IMedioPago CrearMedioPago() { return new MedioPagoPaypal(); }
         public void Pagar()
         {
-            ComprobanteExterno= _medioPago.ProcesarPago();
+            if (Importe < 0)
+            {
+               throw new ValorNotNegativeException();
+            }
+            if (Importe > 0)
+            {
+                ComprobanteExterno = _medioPago.ProcesarPago();
+            }
             
         }
 

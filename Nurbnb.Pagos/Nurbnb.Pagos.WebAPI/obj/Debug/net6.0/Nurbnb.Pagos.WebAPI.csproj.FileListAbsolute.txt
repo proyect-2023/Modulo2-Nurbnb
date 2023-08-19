@@ -87,3 +87,4 @@ D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.WebAPI\bin\Debug\net6.0\Humanizer.dl
 D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.WebAPI\bin\Debug\net6.0\Mono.TextTemplating.dll
 D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.WebAPI\bin\Debug\net6.0\System.CodeDom.dll
+D:\Modulo2-NurBnb\Nurbnb.Pagos\Nurbnb.Pagos.WebAPI\obj\Debug\net6.0\Nurbnb.Pagos.WebAPI.MvcApplicationPartsAssemblyInfo.cs

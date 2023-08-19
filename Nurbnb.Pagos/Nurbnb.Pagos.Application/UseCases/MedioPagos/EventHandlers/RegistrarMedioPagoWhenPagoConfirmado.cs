@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace Nurbnb.Pagos.Application.UseCases.MedioPagos.EventHandlers
 {
-    internal class RegistrarMedioPagoWhenPagoConfirmado
+    public class RegistrarMedioPagoWhenPagoConfirmado
      : INotificationHandler<PagoConfirmado>
     {
         private readonly IMedioPagoRepository _medioPagoRepository;
@@ -29,6 +29,8 @@ namespace Nurbnb.Pagos.Application.UseCases.MedioPagos.EventHandlers
 
         public async Task Handle(PagoConfirmado evento, CancellationToken cancellationToken)
         {
+            if (evento.Detalle.totalImporte <0)
+                throw new ValorNotNegativeException();
 
             MedioPago medio = new MedioPago(evento.Id, evento.Detalle.cuentaOrigen, evento.Detalle.bcoOrigen, evento.Detalle.totalImporte);
             medio.Pagar();
