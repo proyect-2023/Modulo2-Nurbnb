@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Nurbnb.Pagos.Application.UseCases.CatalogoDevoluciones.Command.CrearCatalogoDevolucion
 {
-    internal class CrearCatalogoDevolucionHandler : IRequestHandler<CrearCatalogoDevolucionCommand, Guid>
+    public class CrearCatalogoDevolucionHandler : IRequestHandler<CrearCatalogoDevolucionCommand, Guid>
     {
         private readonly ICatalogoDevolucionRepository _catalogoDevolucionRepository;
         private readonly ICatalogoDevolucionFactory _catalogoDevolucionFactory;
@@ -31,7 +31,7 @@ namespace Nurbnb.Pagos.Application.UseCases.CatalogoDevoluciones.Command.CrearCa
 
             await _unitOfWork.Commit();
 
-            return catalogoCreado.Id;
+            return (catalogoCreado !=null ?catalogoCreado.Id: Guid.NewGuid());
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Nurbnb.Pagos.Domain.Model.Pagos
         public Decimal Total { get; private set; }
 
 
-        internal DetallePago(Guid catalogoid, int porcentaje,decimal importe)
+        public DetallePago(Guid catalogoid, int porcentaje,decimal importe)
         {
             Id = Guid.NewGuid();
             CatalogoId = catalogoid;

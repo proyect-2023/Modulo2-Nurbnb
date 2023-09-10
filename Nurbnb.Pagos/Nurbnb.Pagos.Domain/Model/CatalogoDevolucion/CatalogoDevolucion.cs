@@ -1,4 +1,4 @@
-﻿using Nurbnb.Pagos.Domain.Model.Catalogos;
+﻿
 using Restaurant.SharedKernel.Core;
 using System;
 using System.Collections.Generic;
@@ -15,7 +15,7 @@ namespace Nurbnb.Pagos.Domain.Model.CatalogoDevolucion
         public CatalogoDevolucionPorcentaje PorcentajeDescuento { get; private set; }
 
 
-        internal CatalogoDevolucion(string descripcion, int nroDias, int porcentajeDescuento)
+        public CatalogoDevolucion(string descripcion, int nroDias, int porcentajeDescuento)
         {
             Id = Guid.NewGuid();
             Descripcion = new CatalogoDevolucionDescripcion(descripcion);
@@ -24,7 +24,7 @@ namespace Nurbnb.Pagos.Domain.Model.CatalogoDevolucion
         }
         public CatalogoDevolucion BuscarCatalogo(List<CatalogoDevolucion> listaCatalogo, DateTime fechaInicio, DateTime fechaFin)
         {
-            int nroDias = (fechaFin - DateTime.Now).Days;
+            int nroDias = (fechaFin - fechaInicio).Days;
             return listaCatalogo.Where(r => r.NroDias <= nroDias).OrderBy(r => r.NroDias).First();
         }
         private CatalogoDevolucion() { }

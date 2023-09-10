@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Nurbnb.Pagos.Application.UseCases.Catalogos.Command.CrearCatalogo
 {
-    internal class CrearCatalogoHandler: IRequestHandler<CrearCatalogoCommand,Guid>
+    public class CrearCatalogoHandler: IRequestHandler<CrearCatalogoCommand,Guid>
     {
         private readonly ICatalogoRepository _catalogoRepository;
         private readonly ICatalogoFactory _catalogoFactory;
@@ -30,7 +30,7 @@ namespace Nurbnb.Pagos.Application.UseCases.Catalogos.Command.CrearCatalogo
 
             await _unitOfWork.Commit();
 
-            return catalogoCreado.Id;
+            return (catalogoCreado !=null? catalogoCreado.Id: Guid.NewGuid());
         }
 
         

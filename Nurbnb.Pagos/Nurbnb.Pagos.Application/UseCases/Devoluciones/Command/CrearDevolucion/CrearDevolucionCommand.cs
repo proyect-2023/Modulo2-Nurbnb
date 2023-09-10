@@ -15,6 +15,11 @@ namespace Nurbnb.Pagos.Application.UseCases.Devoluciones.Command.CrearDevolucion
         public Guid PagoId { get;  set; }
         public Guid CatalogoDevolucionId { get; set; }
        
+        //public CrearDevolucionCommand (Guid pago, Guid catalogoDevolucion)
+        //{
+        //    PagoId = pago;
+        //    CatalogoDevolucionId = catalogoDevolucion;
+        //}
     }
 
     

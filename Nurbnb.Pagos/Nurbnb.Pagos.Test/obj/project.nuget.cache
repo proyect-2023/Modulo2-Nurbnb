@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "W8CznOrodwUL4G+z1K78eoaCyy5gBWsAYcKtJT56lr5DZ4m6lrpzOCrOrH3yNJyadRYPFtEDYbSCvwYkEVsFoA==",
+  "dgSpecHash": "D1wSIK8fttasG/1a16HAjiCMSxXj1gF/4ubRt7plJkgLoMoxHOms05SqmevBrs8f0nP0ikz2JjmSbH8rKqxjzQ==",
   "success": true,
   "projectFilePath": "D:\\Modulo2-NurBnb\\Nurbnb.Pagos\\Nurbnb.Pagos.Test\\Nurbnb.Pagos.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ecarrasco\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
-    "C:\\Users\\ecarrasco\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
+    "C:\\Users\\ecarrasco\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\ecarrasco\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
     "C:\\Users\\ecarrasco\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\ecarrasco\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",

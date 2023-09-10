@@ -19,7 +19,7 @@ namespace Nurbnb.Pagos.Domain.Model.Devoluciones
         public decimal ImportePago { get; private set; }
         public decimal TotalDevolucion { get; private set; }
 
-        internal Devolucion( Guid pagoId, Guid catalogoDevolucionId, int porcentajeDevolucion, decimal importePago)
+        public Devolucion( Guid pagoId, Guid catalogoDevolucionId, int porcentajeDevolucion, decimal importePago)
         {
             FechaRegistro = DateTime.Now;
             PagoId = pagoId;

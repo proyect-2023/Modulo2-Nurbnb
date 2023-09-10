@@ -24,7 +24,7 @@ namespace Nurbnb.Pagos.Domain.Model.Pagos
 
         public IEnumerable<DetallePago> Detalle => _detalle;
 
-        internal Pago(TipoPago tipo, Guid operacionId,decimal valorOpe,  string cuentaOrigen, string bcoOrigen)
+        public Pago(TipoPago tipo, Guid operacionId,decimal valorOpe,  string cuentaOrigen, string bcoOrigen)
         {
             Id = Guid.NewGuid();
             Estado = EstadoPago.Registrado;

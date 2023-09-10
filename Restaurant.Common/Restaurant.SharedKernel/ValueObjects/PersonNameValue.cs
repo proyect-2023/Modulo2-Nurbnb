@@ -12,9 +12,9 @@ public record PersonNameValue : ValueObject
     public PersonNameValue(string name)
     {
         CheckRule(new StringNotNullOrEmptyRule(name));
-        if(name.Length > 500)
+        if(name.Length < 2)
         {
-            throw new BussinessRuleValidationException("PersonName can't be more than 500 characters");
+            throw new BussinessRuleValidationException("PersonName no puede ser menos de  2 characters");
         }
         Name = name;
     }

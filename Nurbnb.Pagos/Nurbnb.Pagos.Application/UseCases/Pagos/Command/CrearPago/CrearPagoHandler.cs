@@ -14,7 +14,7 @@ using System.Transactions;
 
 namespace Nurbnb.Pagos.Application.UseCases.Pagos.Command.CrearPago
 {
-    internal class CrearPagoHandler : IRequestHandler<CrearPagoCommand, Guid>
+    public class CrearPagoHandler : IRequestHandler<CrearPagoCommand, Guid>
     {
         private readonly IPagoFactory _pagoFactory;
         private readonly IPagoRepository _pagoRepository;
@@ -43,19 +43,20 @@ namespace Nurbnb.Pagos.Application.UseCases.Pagos.Command.CrearPago
                     throw new PagoCreacionException(" El catálogo con ID: " + item.CatalogoId + " no existe");
                 }
 
-                pago.AgregarDetallePago(item.CatalogoId, storedCatalogo.Porcentaje, request.CostoTotalRenta);
+                if (pago !=null ) pago.AgregarDetallePago(item.CatalogoId, storedCatalogo.Porcentaje, request.CostoTotalRenta);
             }
 
 
-            pago.Confirmar();
-           
-
-            await _pagoRepository.CreateAsync(pago);
+            if (pago != null)
+            {
+                pago.Confirmar();
+                await _pagoRepository.CreateAsync(pago);
+            }
 
 
             await _unitOfWork.Commit();
 
-            return pago.Id;
+            return (pago != null ? pago.Id : Guid.NewGuid());
         }
     }
 }

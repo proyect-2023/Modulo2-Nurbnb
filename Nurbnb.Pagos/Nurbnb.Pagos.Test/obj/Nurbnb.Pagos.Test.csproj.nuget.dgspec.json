@@ -160,6 +160,9 @@
             "projectReferences": {
               "D:\\Modulo2-NurBnb\\Nurbnb.Pagos\\Nurbnb.Pagos.Application\\Nurbnb.Pagos.Application.csproj": {
                 "projectPath": "D:\\Modulo2-NurBnb\\Nurbnb.Pagos\\Nurbnb.Pagos.Application\\Nurbnb.Pagos.Application.csproj"
+              },
+              "D:\\Modulo2-NurBnb\\Nurbnb.Pagos\\Nurbnb.Pagos.Domain\\Nurbnb.Pagos.Domain.csproj": {
+                "projectPath": "D:\\Modulo2-NurBnb\\Nurbnb.Pagos\\Nurbnb.Pagos.Domain\\Nurbnb.Pagos.Domain.csproj"
               }
             }
           }
@@ -186,7 +189,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.2.0, )"
+              "version": "[6.0.0, )"
             },
             "xunit": {
               "target": "Package",

@@ -13,7 +13,7 @@ namespace Nurbnb.Pagos.Domain.Model.Catalogos
         public CatalogoPorcentaje Porcentaje { get; private set; }
         public TipoCatalogo EsReserva { get; private set; }
 
-        internal Catalogo(string descripcion, int porcentaje, TipoCatalogo esReserva) 
+        public Catalogo(string descripcion, int porcentaje, TipoCatalogo esReserva) 
         {
             Id=Guid.NewGuid();
             Descripcion = descripcion;

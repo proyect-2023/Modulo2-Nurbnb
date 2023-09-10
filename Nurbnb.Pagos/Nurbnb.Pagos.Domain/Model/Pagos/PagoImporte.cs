@@ -20,6 +20,6 @@ namespace Nurbnb.Pagos.Domain.Model.Pagos
         }
 
         public static implicit operator decimal(PagoImporte importe) => importe.Value;
-        public static implicit operator PagoImporte(decimal importe) => new(importe);
+        public static implicit operator PagoImporte(decimal importe) => new PagoImporte (importe);
     }
 }

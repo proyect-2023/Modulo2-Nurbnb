@@ -17,7 +17,7 @@ using System.Threading.Tasks;
 
 namespace Nurbnb.Pagos.Application.UseCases.Devoluciones.Command.CrearDevolucion
 {
-    internal class CrearDevolucionHandler : IRequestHandler<CrearDevolucionCommand, Guid>
+    public class CrearDevolucionHandler : IRequestHandler<CrearDevolucionCommand, Guid>
     {
         private readonly IDevolucionRepository _devolucionRepository;
         private readonly IDevolucionFactory _devolucionFactory;
@@ -63,7 +63,7 @@ namespace Nurbnb.Pagos.Application.UseCases.Devoluciones.Command.CrearDevolucion
 
             await _unitOfWork.Commit();
 
-            return devolucion.Id;
+            return (devolucion !=null ?devolucion.Id : Guid.NewGuid());
         }
 
        
