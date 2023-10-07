@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Restaurant.Common\Restaurant.SharedKernel\Restaurant.SharedKernel.csproj" />
+    <ProjectReference Include="..\Restaurant.Common\Restaurant.SharedKernel\Restaurant.SharedKernel.csproj" />
   </ItemGroup>
 
 </Project>

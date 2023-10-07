@@ -1452,8 +1452,8 @@
     },
     "Restaurant.SharedKernel/1.0.0": {
       "type": "project",
-      "path": "../../Restaurant.Common/Restaurant.SharedKernel/Restaurant.SharedKernel.csproj",
-      "msbuildProject": "../../Restaurant.Common/Restaurant.SharedKernel/Restaurant.SharedKernel.csproj"
+      "path": "../Restaurant.Common/Restaurant.SharedKernel/Restaurant.SharedKernel.csproj",
+      "msbuildProject": "../Restaurant.Common/Restaurant.SharedKernel/Restaurant.SharedKernel.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1467,19 +1467,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ecarrasco\\.nuget\\packages\\": {}
+    "C:\\Users\\Leclere\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Modulo2-NurBnb\\Nurbnb.Pagos\\Nurbnb.Pagos.Infrastructure\\Nurbnb.Pagos.Infrastructure.csproj",
+      "projectUniqueName": "D:\\DiplomadoNur\\Proyecto\\Nurbnb.Pagos\\Nurbnb.Pagos.Infrastructure\\Nurbnb.Pagos.Infrastructure.csproj",
       "projectName": "Nurbnb.Pagos.Infrastructure",
-      "projectPath": "D:\\Modulo2-NurBnb\\Nurbnb.Pagos\\Nurbnb.Pagos.Infrastructure\\Nurbnb.Pagos.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\ecarrasco\\.nuget\\packages\\",
-      "outputPath": "D:\\Modulo2-NurBnb\\Nurbnb.Pagos\\Nurbnb.Pagos.Infrastructure\\obj\\",
+      "projectPath": "D:\\DiplomadoNur\\Proyecto\\Nurbnb.Pagos\\Nurbnb.Pagos.Infrastructure\\Nurbnb.Pagos.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\Leclere\\.nuget\\packages\\",
+      "outputPath": "D:\\DiplomadoNur\\Proyecto\\Nurbnb.Pagos\\Nurbnb.Pagos.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ecarrasco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Leclere\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1487,14 +1494,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Modulo2-NurBnb\\Nurbnb.Pagos\\Nurbnb.Pagos.Application\\Nurbnb.Pagos.Application.csproj": {
-              "projectPath": "D:\\Modulo2-NurBnb\\Nurbnb.Pagos\\Nurbnb.Pagos.Application\\Nurbnb.Pagos.Application.csproj"
+            "D:\\DiplomadoNur\\Proyecto\\Nurbnb.Pagos\\Nurbnb.Pagos.Application\\Nurbnb.Pagos.Application.csproj": {
+              "projectPath": "D:\\DiplomadoNur\\Proyecto\\Nurbnb.Pagos\\Nurbnb.Pagos.Application\\Nurbnb.Pagos.Application.csproj"
             }
           }
         }
@@ -1548,7 +1556,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
